@@ -29,9 +29,9 @@ Description:           "Power Factor Correction Control Circuit, CrM/CCM Operati
 
 PORT_TABLE:
 
-Port_Name:             a                  b                  c
+Port_Name:             gate_src           gate_snk           zero_cross
 Description:           "a"               "b"                "c"
-Direction:             in                 in                 out
+Direction:             out                out                in
 Default_Type:          v                  v                  i
 Allowed_Types:         [v,vd,i,id,vnam]   [v,vd,i,id,vnam]   [v,vd,i,id]
 Vector:                no                 no                 no
