@@ -1,0 +1,11 @@
+/powercontrol.cm
+
+/cmextrn.h
+/cminfo.h
+/cminfo2.h
+/objects.inc
+/udnextrn.h
+/udninfo.h
+/udninfo2.h
+
+/*/*.c

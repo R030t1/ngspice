@@ -1,0 +1,65 @@
+/*.......1.........2.........3.........4.........5.........6.........7.........8
+================================================================================
+
+-------------------------------------------------------------------------
+ Copyright 2021
+ Sid Spry
+ All Rights Reserved
+ AGPL 3 (until relicensed for ultimate release)
+-------------------------------------------------------------------------
+
+AUTHORS
+
+     14 Jun 2021     Sid Spry
+
+
+SUMMARY
+
+    This file contains the interface specification for a CRM/CCM PFC
+    controller.
+
+===============================================================================*/
+
+NAME_TABLE:
+
+C_Function_Name:       cm_pfc_crmccm
+Spice_Model_Name:      pfc_crmccm
+Description:           "Power Factor Correction Control Circuit, CrM/CCM Operation"
+
+
+PORT_TABLE:
+
+Port_Name:             a                  b                  c
+Description:           "a"               "b"                "c"
+Direction:             in                 in                 out
+Default_Type:          v                  v                  i
+Allowed_Types:         [v,vd,i,id,vnam]   [v,vd,i,id,vnam]   [v,vd,i,id]
+Vector:                no                 no                 no
+Vector_Bounds:         -                  -                  -
+Null_Allowed:          no                 no                 no
+
+
+
+
+PARAMETER_TABLE:
+
+Parameter_Name:     order            verbose
+Description:        "order"          "verbose"
+Data_Type:          int              int
+Default_Value:      3                0
+Limits:             [2 -]            [0 2]
+Vector:             no               no
+Vector_Bounds:      -                -
+Null_Allowed:       yes              yes
+
+PARAMETER_TABLE:
+
+Parameter_Name:     offset           gain
+Description:        "offset"         "gain"
+Data_Type:          real             real
+Default_Value:      0.0              1.0
+Limits:             -                -
+Vector:             no               no
+Vector_Bounds:      -                -
+Null_Allowed:       yes              yes
+

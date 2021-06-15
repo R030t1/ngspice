@@ -7,7 +7,7 @@ include makedefs
 
 
 # The codemodels to make
-CMDIRS = spice2poly digital analog xtradev xtraevt table
+CMDIRS = spice2poly digital analog xtradev xtraevt table powercontrol
 
 
 #Invoke $(MAKE) for each of the CMDDIRS
